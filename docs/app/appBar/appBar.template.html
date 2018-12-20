@@ -1,0 +1,27 @@
+<style>
+  .title {
+    font-size:1.5em;
+  }
+</style>
+
+<div class="navbar-fixed">
+  <nav class="{{$ctrl.appBarColor}} z-depth-0">
+    <div class="left">
+      <a class="title">{{$ctrl.title}}</a>
+      <a class="sidenav-trigger show-on-large" data-target="sidenav"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</div>
+
+<ul class="sidenav grey" id="sidenav">
+  <span ng-repeat="entry in $ctrl.entries">
+  <li ng-if="entry.title == 'divider'">
+    <div class="divider"></div>
+  </li>
+  <li ng-if="entry.title != 'divider'">
+      <a ng-href="{{entry.href}}" ng-click="$ctrl.closeNav()">
+	{{entry.title}}
+      </a>
+  </li>
+  </span>
+</ul>

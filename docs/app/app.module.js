@@ -1,0 +1,9 @@
+angular.module('vimApp',
+  [
+    'ngRoute',
+    'appBar',
+    'home',
+    'about',
+    'commands'
+  ]
+);

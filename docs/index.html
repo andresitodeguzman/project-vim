@@ -1,0 +1,46 @@
+<html ng-app="vimApp">
+<head>
+  <base href="/">
+
+  <meta name="theme-color" content="#388e3c">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-sanitize.js"></script>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <script src="app/global.js"></script>
+
+  <!-- app -->
+  <script src="app/app.module.js"></script>
+  <script src="app/app.config.js"></script>
+  <!-- .app -->
+
+  <!-- components -->
+  <script src="app/appBar/appBar.module.js"></script>
+  <script src="app/appBar/appBar.component.js"></script>
+  <script src="app/home/home.module.js"></script>
+  <script src="app/home/home.component.js"></script>
+  <script src="app/about/about.module.js"></script>
+  <script src="app/about/about.component.js"></script>
+  <script src="app/commands/commands.module.js"></script>
+  <script src="app/commands/commands.component.js"></script>
+  <!-- .components -->
+
+  
+</head>
+<body class="grey">
+  <app-bar></app-bar>
+  <div ng-view></div>
+</body>
+</html>

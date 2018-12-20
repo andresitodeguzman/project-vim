@@ -1,0 +1,11 @@
+<div class="container">
+  <br>
+  <h5>{{$ctrl.data.title}}</h5>
+  <br>
+</div>
+<ul class="collection">
+  <li ng-repeat="command in $ctrl.data.commands" class="collection-item grey lighten-1">
+    <h5 ng-bind-html="command.command"></h5>
+    <p><font size="-1" class="black-text">{{command.description}}</font></p>
+  </li>
+</ul>
